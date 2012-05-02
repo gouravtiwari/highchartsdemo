@@ -13,3 +13,4 @@ Highcharts references
 
 Basic examples
 ---------------------
+* [basic](index.html)
