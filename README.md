@@ -18,7 +18,7 @@ Basic examples
 
 Advanced examples
 ---------------------------
-* highchartsdemo/examples/waterfall-chart.html
+* highchartsdemo/examples/waterfall-chart.html or refer to [waterfall-charts](https://github.com/toamitkumar/waterfall-charts)
 
 Excercise
 -------------
