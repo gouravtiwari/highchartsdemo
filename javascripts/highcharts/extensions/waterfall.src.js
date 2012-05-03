@@ -1,4 +1,4 @@
-$.fn.columnChart = function(chartConfig) {
+$.fn.waterfallChart = function(chartConfig) {
         var element = $(this);
         var width = element.css("width").substring(0, 3);
         var theme = $.columnChartTheme(chartConfig);
@@ -17,8 +17,13 @@ $.fn.columnChart = function(chartConfig) {
                     }
                 }
             });
+            var barCount = chartConfig.series[i].data.length;
+            for (var counter=0; counter < barCount-1; counter++) {
+                yPoint = chartConfig.series[i].data[counter].y;
+                seriesOptions.push($.helper.lineConnector([[counter+.1, yPoint], [counter+0.9, yPoint]]));
+              }
         });
-
+        
         jQuery.extend(true, chartOptions, {
             chart: {
                 renderTo: element.attr("id"),
@@ -44,7 +49,7 @@ $.fn.columnChart = function(chartConfig) {
             },
             series: seriesOptions,
             legend: {
-                enabled: true
+                enabled: false
             },
             labels: {
                 style: {
