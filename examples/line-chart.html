@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Highcharts advanced demo</title>
+      <script src="../javascripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+      <script src="../javascripts/highcharts/highcharts.src.js" type="text/javascript"></script>
+      <script src="../javascripts/highcharts/extensions/theme.src.js" type="text/javascript"></script>
+      <script src="../javascripts/highcharts/extensions/line.src.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h3 style="text-align:center">Line chart implementation</h3>
+    <div id="container" style="width: 60%; height: 400px"></div>
+    <script  type="text/javascript">
+      $("#container").lineChart({
+          series: [{
+            name: 'Benchmark',
+            data: [                     
+                     { y: 25}, 
+                     { y: 45}, 
+                     { y: 55}, 
+                     { y: 70},
+                     { y: 100},    
+                     { y: 150},   
+                     { y: 250}
+                  ]
+          }
+          // ,{
+          //   name: 'Real Values',
+          //   data: [                     
+          //            { y: 30}, 
+          //            { y: 40}, 
+          //            { y: 75}, 
+          //            { y: 75},
+          //            { y: 120},    
+          //            { y: 130},   
+          //            { y: 220}
+          //         ]
+          // }
+          ],
+          categories: ['Planned Care', 'Urgent Care', 'Mental Health', 'Maternity & newborn', 'Child Health', 'Prescribing', 'Learning disability', 'Total'],
+          ymax: 400
+      });
+    </script>
+
+
+  </body>
+</html>
