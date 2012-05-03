@@ -36,10 +36,7 @@ $.fn.lineChart = function(chartConfig) {
         tooltip: {
             backgroundColor: $.chartDefaults.white,
             shadow: false,
-            useHTML: true,
-            formatter: function() {
-                return $.hh.nf(this.y, chartConfig.metric_unit);
-            }
+            useHTML: true
         },
         series: seriesOptions
     });
