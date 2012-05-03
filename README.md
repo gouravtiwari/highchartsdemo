@@ -14,6 +14,7 @@ Highcharts references
 Basic examples
 ---------------------
 * highchartsdemo/index.html
+* highchartsdemo/examples/line-chart.html
 * highchartsdemo/examples/column-chart.html
 
 Advanced examples
