@@ -1,5 +1,5 @@
-Highchartsdemo
-==========
+Highcharts demo and tutorial
+==================
 
 Pre-requisite
 -----------------
