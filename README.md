@@ -14,4 +14,14 @@ Highcharts references
 Basic examples
 ---------------------
 * highchartsdemo/index.html
-* highchartsdemo/organized-implementation.html
+* highchartsdemo/examples/column-chart.html
+
+Advanced examples
+---------------------------
+* highchartsdemo/examples/waterfall-chart.html
+
+Excercise
+-------------
+* draw spline and column combined chart with multiple series on same chart
+* draw stacked column chart with custom theme
+* draw column chart after page load (through ajax call)
